@@ -896,6 +896,20 @@
           40.261081
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "time": "00:56",
+        "data": "31/10/16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.886305,
+          40.277776
+        ]
+      }
     }
   ]
 }
