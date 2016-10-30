@@ -4,126 +4,56 @@
     {
       "type": "Feature",
       "properties": {
-        "time": "14:56",
+        "time": "20:48",
         "data": "30/10/16"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -74.524128,
-          40.556728
+          -74.332423,
+          40.621736
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "time": "14:56",
+        "time": "20:52",
         "data": "30/10/16"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -74.524128,
-          40.556728
+          -74.377175,
+          40.588808
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "time": "14:56",
+        "time": "20:56",
         "data": "30/10/16"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -74.524128,
-          40.556728
+          -74.423831,
+          40.58034
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "time": "14:56",
+        "time": "21:00",
         "data": "30/10/16"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -74.524128,
-          40.556728
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "time": "14:56",
-        "data": "30/10/16"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.524128,
-          40.556728
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "time": "14:56",
-        "data": "30/10/16"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.524128,
-          40.556728
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "time": "14:56",
-        "data": "30/10/16"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.524128,
-          40.556728
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "time": "14:56",
-        "data": "30/10/16"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.524128,
-          40.556728
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "time": "14:56",
-        "data": "30/10/16"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.524128,
-          40.556728
+          -74.482083,
+          40.578831
         ]
       }
     }
