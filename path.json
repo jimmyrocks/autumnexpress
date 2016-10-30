@@ -378,6 +378,20 @@
           40.578181
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "time": "22:38",
+        "data": "30/10/16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.4848,
+          40.54115
+        ]
+      }
     }
   ]
 }
