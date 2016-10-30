@@ -1652,6 +1652,76 @@
           40.042813
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "time": "04:40",
+        "data": "31/10/16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.431206,
+          40.046771
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "time": "04:44",
+        "data": "31/10/16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.369153,
+          40.04361
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "time": "04:48",
+        "data": "31/10/16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.299266,
+          40.013606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "time": "04:48",
+        "data": "31/10/16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.299266,
+          40.013606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "time": "04:52",
+        "data": "31/10/16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.250961,
+          39.9931
+        ]
+      }
     }
   ]
 }
