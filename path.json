@@ -1330,6 +1330,48 @@
           40.070925
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "time": "03:08",
+        "data": "31/10/16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.337735,
+          40.070925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "time": "03:17",
+        "data": "31/10/16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.313635,
+          40.05585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "time": "03:17",
+        "data": "31/10/16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.313635,
+          40.05585
+        ]
+      }
     }
   ]
 }
