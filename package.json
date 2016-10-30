@@ -4,7 +4,8 @@
     "email": "jim@loc8"
   }],
   "dependencies": {
-    "csv": "*"
+    "csv": "*",
+    "cron": "*"
   },
   "author": "Jim McAndrew <jim@loc8.us>",
   "license": "CC0",
