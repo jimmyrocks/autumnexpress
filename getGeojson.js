@@ -22,6 +22,7 @@ var writeFile = function (path, data) {
     if (err) {
       return console.log(err);
     }
+    console.log('file written');
   });
 };
 
@@ -34,6 +35,7 @@ var req = https.get(spreadsheetLink, function (res) {
 
   res.on('end', function () {
     csv.parse(data, function (e, d) {
+      console.log('prefilter', d);
       var coords = d.filter(function (row) {
         return row && row[1] && row[1].substr(0, 4) === 'lat:';
       });
