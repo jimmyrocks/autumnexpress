@@ -1,12 +1,43 @@
 <!DOCTYPE html>
-
 <html>
 
+<head>
+
+  <title>Autumn Express: October 30, 2016</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+  <link rel="stylesheet" href="//unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+  <script src="//unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+
+</head>
+
 <body>
+  <div id="map" style="width: 600px; height: 400px;"></div>
+  <script>
+    var mapLayer = L.map('map').setView([40.5, -75], 9);
 
-<h1>Hello World</h1>
+    var cartoLight = L.tileLayer(
+      '//{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png',
+      {
+        maxZoom: 18,
+        attribution: '<a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> | © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, © <a href="//carto.com/attributions">CARTO</a>'
+      });
+    var cartoDark = L.tileLayer(
+      '//{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png',
+      {
+        maxZoom: 18,
+        attribution: '<a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> | © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, © <a href="//carto.com/attributions">CARTO</a>'
+      });
+    cartoLight.addTo(mapLayer);
+    var baseMaps = {
+      "Light": cartoLight,
+      "Dark": cartoDark
+    };
 
-<p>Autumn Express</p>
+    L.control.layers(baseMaps).addTo(mapLayer);
+  </script>
 
 </body>
 
