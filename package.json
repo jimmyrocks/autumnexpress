@@ -1,0 +1,22 @@
+{
+  "contributors": [{
+    "name": "Jim McAndrew",
+    "email": "jim@loc8"
+  }],
+  "dependencies": {
+    "csv": "*"
+  },
+  "author": "Jim McAndrew <jim@loc8.us>",
+  "license": "CC0",
+  "main": "index.js",
+  "name": "autumn_express",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/jimmyrocks/autumnexpress"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "node ./test/index.js"
+  },
+  "version": "0.0.1"
+}
