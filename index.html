@@ -15,7 +15,7 @@
 </head>
 
 <body style="height:100%">
-  <div id="map" style="width: 100%; height: 80%;"></div>
+  <div id="map" style="width: 100%; height: 90%;"></div>
   <script>
     var mapLayer = L.map('map').setView([40.5, -75], 9);
 
@@ -37,8 +37,8 @@
       "Dark": cartoDark
     };
 
-    var geojsonLayer = new L.geoJson();
-    geojsonLayer.addTo(mapLayer);
+    // var geojsonLayer = new L.geoJson();
+    // geojsonLayer.addTo(mapLayer);
 
     $.ajax(
     {
@@ -46,16 +46,41 @@
       url: "path.json",
       success: function(data)
       {
-        $(data.features).each(function(key, data)
+        L.geoJson(data,
         {
-          geojsonLayer.addData(data);
-        });
+          onEachFeature: onEachFeature
+        }).addTo(mapLayer);
       }
-    }).error(function(e) {console.log('e', e);});
+    });
+
+    function onEachFeature(feature, layer)
+    {
+      var popupContent = 'Time (off by 12 hours in my GPS): ' + feature.properties.time + ' / Date: ' + feature.properties.data;
+
+      layer.bindPopup(popupContent);
+    }
 
     L.control.layers(baseMaps).addTo(mapLayer);
   </script>
 
+  Created by <a href="mailto:jim@loc8.us">Jim McAndrew</a> -- Check out <a href="http://github.com/jimmyrocks/autumnexpress">the project on Github</a> -- Or <a href="http://loc8.us">my website</a>
+  <!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=11149285; 
+var sc_invisible=1; 
+var sc_security="c144da8f"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="shopify stats"
+href="http://statcounter.com/shopify/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11149285/0/c144da8f/1/"
+alt="shopify stats"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
 </body>
 
 </html>
