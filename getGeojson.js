@@ -3,7 +3,7 @@ var csv = require('csv');
 var fs = require('fs');
 var path = require('path');
 
-var spreadsheetLink = 'https://docs.google.com/spreadsheets/d/1Mpc5wgmHXegFi_pb4_VJX0RtiNIQ9ImFL1troHJ9mb4/pub?output=csv';
+var spreadsheetLink = 'https://docs.google.com/spreadsheets/d/1Mpc5wgmHXegFi_pb4_VJX0RtiNIQ9ImFL1troHJ9mb4/pub?output=csv&cache=' + (Math.floor(Math.random()*10000000)).toString(32);
 var regexp = new RegExp(/lat:\s([\d-]{1,4}\.\d{1,6})\slong:\s([\d-]{1,4}\.\d{1,6})\sspeed:\s([\d-]{1,4}\.\d{1,6})\s(.+?)\s(.+?)\s(.+?)\s.+$/gi);
 
 var applyTemplate = function (lon, lat, props) {
@@ -35,7 +35,7 @@ var req = https.get(spreadsheetLink, function (res) {
 
   res.on('end', function () {
     csv.parse(data, function (e, d) {
-      console.log('prefilter', d);
+      console.log('prefilter', d[d.length - 1 ]);
       var coords = d.filter(function (row) {
         return row && row[1] && row[1].substr(0, 4) === 'lat:';
       });
